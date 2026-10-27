@@ -20,3 +20,8 @@ venv/
 *.wav
 *.mp3
 *.flac
+
+# voice_cloning: small curated voice samples are tracked
+!voice_cloning/references/
+!voice_cloning/references/**
+!voice_cloning/references/**/*.wav
