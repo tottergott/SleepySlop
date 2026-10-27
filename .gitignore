@@ -9,6 +9,8 @@ venv/
 # large / generated (per project)
 **/models/
 **/datasets/
+!voice_cloning/datasets/
+!voice_cloning/datasets/**
 **/outputs/
 **/references/
 **/third_party/
@@ -18,8 +20,10 @@ venv/
 *.onnx
 *.safetensors
 *.wav
+!voice_cloning/**/*.wav
 *.mp3
 *.flac
+!voice_cloning/datasets/**/*.flac
 
 # voice_cloning: small curated voice samples are tracked
 !voice_cloning/references/

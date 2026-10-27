@@ -58,3 +58,17 @@ audio, sr = assistant.say("Ледяная Скорбь жаждет душ.")
   фронтенд (`orange-RAG/glados_ru`) не опубликован.
 - Лицензии: F5-TTS_RUSSIAN — CC BY-NC 4.0; голоса персонажей принадлежат Valve и Blizzard.
   Только для личного некоммерческого использования.
+
+## Общий датасет (в репозитории, Git LFS)
+
+`datasets/` — все русские реплики персонажей, без потерь в FLAC (~730 МБ, 3410 файлов):
+
+| Папка | Персонаж | Источник |
+|---|---|---|
+| `glados_ru`, `glados_p1_ru`, `glados_other_ru` | GLaDOS (Portal 2 / Portal 1 / прочее) | RoxasYTB/*-ljspeech |
+| `wheatley_ru` | Уитли | RoxasYTB/wheatley_ru-ljspeech |
+| `cave_johnson_ru` | Кейв Джонсон | RoxasYTB/cavejohnson_ru-ljspeech |
+| `pudge_ru` | Пудж | DaniilMiskevich/knn-vc-wavlm-pudge |
+| `witch_doctor_ru` | Witch Doctor | Dubina/dota2-wd |
+
+Перед клонированием: `git lfs install`. Новые реплики (например Артаса) кладите в `references/user/<голос>/` и коммитьте — LFS подхватит `.wav/.flac` сам.

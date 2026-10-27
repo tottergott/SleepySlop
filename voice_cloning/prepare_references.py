@@ -206,7 +206,7 @@ def main():
         y, meta = from_clips("pudge", files, "DaniilMiskevich/knn-vc-wavlm-pudge (Russian Dota 2 VO)", typical=typical)
         refs["pudge"] = (y, meta, typical_set(typical, files))
     if clips.get("witch_doctor"):
-        files = sorted(Path(clips["witch_doctor"]).glob("*.wav"))
+        files = sorted(p for p in Path(clips["witch_doctor"]).iterdir() if p.suffix.lower() in AUDIO_EXT)
         typical = Typical(files)
         y, meta = from_clips("witch_doctor", files, "Dubina/dota2-wd (Russian Dota 2 VO)", min_s=0.8, typical=typical)
         refs["witch_doctor"] = (y, meta, typical_set(typical, files))

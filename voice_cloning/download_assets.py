@@ -261,12 +261,13 @@ def main():
     try:
         out = DATASETS / "witch_doctor_ru"
         out.mkdir(parents=True, exist_ok=True)
-        for f in api.list_repo_files("Dubina/dota2-wd", repo_type="dataset"):
+        # Already in the monorepo (FLAC) -> nothing to download.
+        for f in ([] if any(out.iterdir()) else api.list_repo_files("Dubina/dota2-wd", repo_type="dataset")):
             if f.startswith("wd dota2/") and f.endswith(".wav") and "(1)" not in f:
                 p = dl("Dubina/dota2-wd", f, repo_type="dataset")
                 shutil.copy2(p, out / Path(f).name.replace(".mp3.wav", ".wav"))
         manifest["ru_clips"]["witch_doctor"] = str(out)
-        log("Dubina/dota2-wd (Russian Witch Doctor VO)", True, f"{len(list(out.glob('*.wav')))} lines")
+        log("Dubina/dota2-wd (Russian Witch Doctor VO)", True, f"{len(list(out.iterdir()))} lines")
     except Exception as e:
         log("Dubina/dota2-wd", False, str(e)[:200])
 
