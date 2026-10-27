@@ -1,0 +1,42 @@
+{
+  "glados": {
+    "real_f0": 135.5268948290857,
+    "silero_speaker": "xenia",
+    "silero_f0": 200.17697974787103,
+    "exact_shift": -6.75,
+    "suggested_pitch": -7,
+    "current_pitch": 0
+  },
+  "wheatley": {
+    "real_f0": 197.20412463987537,
+    "silero_speaker": "aidar",
+    "silero_f0": 118.34309359987608,
+    "exact_shift": 8.84,
+    "suggested_pitch": 9,
+    "current_pitch": 2
+  },
+  "cave_johnson": {
+    "real_f0": 152.4651555001514,
+    "silero_speaker": "aidar",
+    "silero_f0": 118.34309359987608,
+    "exact_shift": 4.39,
+    "suggested_pitch": 4,
+    "current_pitch": -1
+  },
+  "pudge": {
+    "real_f0": 103.49015251248186,
+    "silero_speaker": "eugene",
+    "silero_f0": 90.09754473897452,
+    "exact_shift": 2.4,
+    "suggested_pitch": 2,
+    "current_pitch": -2
+  },
+  "witch_doctor": {
+    "real_f0": 160.2691096957162,
+    "silero_speaker": "eugene",
+    "silero_f0": 92.5444296697687,
+    "exact_shift": 9.51,
+    "suggested_pitch": 10,
+    "current_pitch": -1
+  }
+}

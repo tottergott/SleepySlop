@@ -1,0 +1,22 @@
+# secrets
+.env
+*.env
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# large / generated (per project)
+**/models/
+**/datasets/
+**/outputs/
+**/references/
+**/third_party/
+**/bin/
+*.pth
+*.index
+*.onnx
+*.safetensors
+*.wav
+*.mp3
+*.flac

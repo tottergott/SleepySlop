@@ -1,0 +1,22 @@
+# torch==2.6.0 / torchaudio==2.6.0 (cu124) are installed first from the PyTorch index; see README.
+f5-tts
+faster-whisper
+pedalboard
+pyworld
+librosa
+soundfile
+huggingface_hub
+python-dotenv
+faiss-cpu
+jiwer
+num2words
+onnxruntime
+ruaccent
+imageio-ffmpeg
+phonemizer-fork
+espeakng-loader
+transformers
+torchcrepe
+noisereduce
+psutil
+py-cpuinfo
